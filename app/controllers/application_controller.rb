@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
     redirect '/account'
   end
   redirect '/sessions/login'
-  
+
   end
 
   get '/account' do
