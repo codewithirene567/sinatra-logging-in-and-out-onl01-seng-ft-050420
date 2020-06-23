@@ -7,6 +7,8 @@
   </head>
   <body id="page-top">
     <a href="/account/logout">Log Out</a>
-    <%= Helpers.is_logged_in?(session) %>
+    <%= if Helpers.is_logged_in?(session)
+    else
+       %>
   </body>
 </html>
