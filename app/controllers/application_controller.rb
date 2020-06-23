@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    @current_user = User.find_by_id(session[:user_id])
+    #@current_user = User.find_by_id(session[:user_id])
    if Helpers.is_logged_in?(session)
      erb :account
    else
