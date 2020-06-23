@@ -7,8 +7,9 @@ class Helpers
 
   def self.is_logged_in?(session[:user_id])
     if session[:user_id] = @user
+      true
     else
-      flase
+      false
   end
 
 end
