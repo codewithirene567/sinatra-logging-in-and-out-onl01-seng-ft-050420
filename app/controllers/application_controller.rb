@@ -17,11 +17,11 @@ class ApplicationController < Sinatra::Base
     redirect '/account'
   end
   redirect '/sessions/login'
-  erb :'views/account'
+  
   end
 
   get '/account' do
-
+   erb :'views/account'
   end
 
   get '/logout' do
