@@ -5,8 +5,10 @@ class Helpers
     user
   end
 
-  def self.is_logged_in?
-    
+  def self.is_logged_in?(session[:user_id])
+    if session[:user_id] = @session
+    else
+      flase
   end
 
 end
