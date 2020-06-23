@@ -7,6 +7,6 @@
   </head>
   <body id="page-top">
     <a href="/account/logout">Log Out</a>
-    <%= Helpers.is_logged_in?
+    <%= Helpers.is_logged_in?(session) %>
   </body>
 </html>
